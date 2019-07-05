@@ -49,15 +49,6 @@ validationAccuracy
 
 %confmat=confusionmat(X(:,1),validationPredictions);
 %% figure
-figure
-gscatter(X(:,90),X(:,60),Y);
-h = gca;
-lims = [h.XLim h.YLim]; % Extract the x and y axis limits
-title('{\bf Scatter Diagram of Omics features}');
-xlabel('feat1');
-ylabel('feat2');
-legend('Location','Northwest');
-
 Y_test = resubPredict(Mdl);
 plotconfusion(validationPredictions, Y_test)
 plotroc(validationPredictions, Y_test)
