@@ -1,13 +1,11 @@
-%load data
-%rna = readtable('mRna_sorted_out.csv','ReadRowNames',true);
-%save('rna.mat', 'rna')
 
-%load data
-meth = readtable('methylation_sorted_out.csv','ReadRowNames',true);
-save('meth.mat', 'meth')
 
-%mirna = readtable('mirna_sorted_out.csv','ReadRowNames',true);
-%save('mirna.mat', 'mirna')
+%%load data for each omics dataset seperately
+mirna = readtable('mirna_sorted_out.csv','ReadRowNames',true);
+save('mirna.mat', 'mirna')
+
+%meth = readtable('methylation_sorted_out.csv','ReadRowNames',true);
+%save('meth.mat', 'meth')
 
 %cnv = readtable('CNV_sorted_out.csv','ReadRowNames',true);
 %save('cnv.mat', 'cnv')
@@ -25,8 +23,8 @@ save('meth.mat', 'meth')
 %save('clinical.mat', 'clinical')
 
 
-Lung Adenocarcinoma: Patient survival prediction.
-A cancer patient data set containing 198 patient samples and approx 22k genes or features will be used to train a model to predict patient survival into three possible classes: alive, alive_relapse, relapse_dead.
+%Lung Adenocarcinoma: Patient survival prediction.
+%A cancer patient data set containing 198 patient samples and approx 22k genes or features will be used to train a model to predict patient survival into three possible classes: alive, alive_relapse, relapse_dead.
 %load Data
 %load('cnv.mat')
 %load('cnv.mat');
@@ -41,26 +39,6 @@ load('mirna.mat');
 response = categorical(d(:,2));
 mirna.class = response;
 feature_table =mirna;
-
-%Cnv = (table2array(feature_table))';
-%rna = (table2array(rna))';
-%mirna = (table2array(mirna))';
-%protein = (table2array(protein))';
-%mutation = (table2array(mutation))';
-%clinical = (table2array(clinical))';
-%response= (table2array(response))';
-%x= {cnv; mirna; rna; protein; mutation};
-%T=response;
-%T=grp2idx(response);
-
-% 
-% % === train the network
-% [net,tr] = train(net,P,T)
-
-%x = P1;
-%t = T;
-
-
 
 rng(1)
 % Use 70% of data for training and remaining for testing
@@ -110,5 +88,4 @@ disp(feature_table.Properties.VariableNames(selected_feature_indx))
 meth_sel_features =feature_table.Properties.VariableNames(selected_feature_indx)
 %final_table = (table2array(feature_table(:,selected_feature_indx)))';
 final_table = feature_table(:,selected_feature_indx);
-writetable( final_table,'meth_sel_features_1genes.xlsx', 'WriteRowNames',true);
-%csvwrite('./NCA_outputs/mutation_selected_features.csv', mutation_sel_features)
+writetable( final_table,'meth_sel_features_1genes.xlsx', 'WriteRowNames',true);  %output file with selected features
