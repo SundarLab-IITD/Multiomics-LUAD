@@ -1,13 +1,9 @@
-%load data
-%rna = readtable('mRna_sorted_out.csv','ReadRowNames',true);
-%save('rna.mat', 'rna')
+% Load data for each omics type
+%meth = readtable('methylation_sorted_out.csv','ReadRowNames',true);
+%save('meth.mat', 'meth')
 
-%load data
-meth = readtable('methylation_sorted_out.csv','ReadRowNames',true);
-save('meth.mat', 'meth')
-
-%mirna = readtable('mirna_sorted_out.csv','ReadRowNames',true);
-%save('mirna.mat', 'mirna')
+mirna = readtable('mirna_sorted_out.csv','ReadRowNames',true);
+save('mirna.mat', 'mirna')
 
 %cnv = readtable('CNV_sorted_out.csv','ReadRowNames',true);
 %save('cnv.mat', 'cnv')
@@ -25,8 +21,8 @@ save('meth.mat', 'meth')
 %save('clinical.mat', 'clinical')
 
 
-Lung Adenocarcinoma: Patient survival prediction.
-A cancer patient data set containing 198 patient samples and approx 22k genes or features will be used to train a model to predict patient survival into three possible classes: alive, alive_relapse, relapse_dead.
+%Lung Adenocarcinoma: Patient survival prediction.
+%A cancer patient data set containing 198 patient samples and approx 22k genes or features will be used to train a model to predict patient survival into three possible classes: alive, alive_relapse, relapse_dead.
 %load Data
 %load('cnv.mat')
 %load('cnv.mat');
@@ -111,4 +107,3 @@ meth_sel_features =feature_table.Properties.VariableNames(selected_feature_indx)
 %final_table = (table2array(feature_table(:,selected_feature_indx)))';
 final_table = feature_table(:,selected_feature_indx);
 writetable( final_table,'meth_sel_features_1genes.xlsx', 'WriteRowNames',true);
-%csvwrite('./NCA_outputs/mutation_selected_features.csv', mutation_sel_features)
