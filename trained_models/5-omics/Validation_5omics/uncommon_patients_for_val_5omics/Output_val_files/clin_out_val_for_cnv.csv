@@ -1,0 +1,67 @@
+Hybridization REF,years_to_birth,vital_status,OS_TIME,pathologic_stage,pathology_T_stage,pathology_N_stage,pathology_M_stage,gender,date_of_initial_pathologic_diagnosis,histological_type
+TCGA-73-4668-01,66,0,467,stage iib,t2,n1,m0,female,2009,lung micropapillary adenocarcinoma
+TCGA-55-1596-01,55,0,2065,stage iib,t2,n1,m0,male,2004,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4510-01,51,1,896,stage iib,t2,n1,m0,female,2001,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-67-3771-01,77,0,610,stage ia,t1,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4494-01,77,1,1081,stage iiia,t3,n1,m0,male,1995,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4486-01,72,1,2318,stage ia,t1,n0,m0,male,1992,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4505-01,61,1,428,stage iib,t2,n1,m0,female,1996,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-38-4625-01,66,0,2973,stage ib,t2a,n0,m0,female,2002,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-73-4662-01,65,0,2515,stage ia,t1,n0,m0,female,2007,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-64-1677-01,77,1,628,stage iiia,t2,n1,m0,female,2005,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2662-01,65,0,1280,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2655-01,65,0,1324,stage ia,t1,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2657-01,74,0,1351,stage ib,t2,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3396-01,74,0,1130,stage iiia,t2,n1,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3398-01,77,0,1163,stage ia,t1b,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-64-1680-01,63,0,1126,stage iv,t2a,n1,m1,male,2007,lung adenocarcinoma mixed subtype
+TCGA-35-4122-01,69,0,225,stage ia,t1,n0,m0,male,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2659-01,65,0,1367,stage iib,t1,n1,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-55-1594-01,68,0,1178,stage iiia,t2,n1,m0,male,2005,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-6144-01,58,0,723,stage ia,t1a,n0,m0,male,2011,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-73-4675-01,59,1,922,stage iiia,t3,n1,m0,male,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-4112-01,60,1,808,stage ib,t2a,n0,m0,female,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-73-4659-01,66,1,711,stage iiia,t2,n1,m0,male,2006,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3918-01,60,0,1036,stage ia,t1,n0,m0,female,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2666-01,43,1,97,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-73-4670-01,69,0,131,stage iv,t2,n0,m1,female,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2668-01,51,1,761,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-73-4666-01,52,0,800,stage iv,t1,n0,m1,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-35-4123-01,38,0,182,stage ia,t1,n0,m0,male,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3917-01,33,0,1183,stage ib,t2,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2656-01,59,0,1429,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-69-8453-01,77,0,813,stage iib,t3,n0,m0,male,2012,mucinous (colloid) carcinoma
+TCGA-73-4658-01,80,1,1600,stage ib,t2,n0,m0,female,2004,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-64-1676-01,58,0,1728,stage ia,t1a,n0,m0,male,2005,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4507-01,73,1,268,stage iiia,t3,n1,m0,female,1997,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-38-4629-01,68,1,864,stage iib,t3,n0,m0,male,2003,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4506-01,68,1,999,stage iib,t2,n1,m0,female,1997,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-49-4501-01,67,1,1421,stage ib,t2,n0,m0,female,1996,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-38-4628-01,65,1,1492,stage iib,t2,n1,m0,female,2002,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-38-4627-01,64,1,1147,stage iia,t1b,n1,m0,female,2003,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2661-01,69,0,1159,stage ia,t1,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2665-01,55,0,1301,stage iib,t2,n1,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3919-01,71,1,1026,stage ia,t1,n0,m0,female,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-35-3615-01,57,0,14,stage ib,t2,n0,m0,male,2007,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-67-3770-01,70,0,610,stage ia,t1,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-67-3773-01,84,0,427,stage ib,t2,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-78-7143-01,62,1,4961,stage ib,t2,n0,m0,female,1992,lung bronchioloalveolar carcinoma nonmucinous
+TCGA-38-4630-01,75,1,1073,stage ib,t2,n0,m0,female,2000,lung papillary adenocarcinoma
+TCGA-67-3774-01,73,0,385,stage ib,t2,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-67-3772-01,82,0,573,stage ib,t2,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-05-4434-01,67,1,457,stage iv,t4,n1,m1,female,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4426-01,71,0,791,stage ib,t2,n0,m0,male,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4418-01,69,1,274,stage iiia,t3,n1,m0,male,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4425-01,70,0,669,stage iv,t2,n0,m1,female,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4420-01,41,0,912,stage ib,t2,n0,m0,male,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4389-01,70,0,1369,stage ia,t1,n0,m0,male,2005,lung adenocarcinoma mixed subtype
+TCGA-05-4397-01,65,1,731,stage iib,t2,n1,m0,male,2006,lung adenocarcinoma mixed subtype
+TCGA-05-4250-01,79,1,121,stage iiia,t3,n1,m0,female,2007,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-05-4249-01,67,0,1523,stage ib,t2,n0,m0,male,2007,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-05-4432-01,66,0,761,stage iib,t2,n1,m0,male,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4382-01,68,0,607,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma mixed subtype
+TCGA-05-4398-01,47,0,1431,stage iiib,t4,n1,m0,female,2006,lung adenocarcinoma mixed subtype
+TCGA-05-4430-01,59,0,761,stage ib,t2,n0,m0,female,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4422-01,68,0,365,stage ib,t2,n0,m0,male,2008,lung adenocarcinoma mixed subtype
+TCGA-05-4403-01,76,0,578,stage ib,t2,n0,m0,male,2006,lung adenocarcinoma mixed subtype
+TCGA-05-4402-01,57,1,244,stage iv,t2,n1,m1,female,2007,lung adenocarcinoma mixed subtype

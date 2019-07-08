@@ -1,0 +1,16 @@
+Hybridization REF,years_to_birth,vital_status,OS_TIME,pathologic_stage,pathology_T_stage,pathology_N_stage,pathology_M_stage,gender,date_of_initial_pathologic_diagnosis,histological_type
+TCGA-71-8520-01,60,1,210,stage ib,t2,n0,m0,female,2011,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-55-7227-01,77,1,952,stage iiia,t3,n1,m0,male,2011,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-6144-01,58,0,723,stage ia,t1a,n0,m0,male,2011,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-4112-01,60,1,808,stage ib,t2a,n0,m0,female,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3918-01,60,0,1036,stage ia,t1,n0,m0,female,2010,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2666-01,43,1,97,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2668-01,51,1,761,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-3917-01,33,0,1183,stage ib,t2,n0,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2656-01,59,0,1429,stage ib,t2,n0,m0,male,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-69-8453-01,77,0,813,stage iib,t3,n0,m0,male,2012,mucinous (colloid) carcinoma
+TCGA-73-4658-01,80,1,1600,stage ib,t2,n0,m0,female,2004,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-44-2665-01,55,0,1301,stage iib,t2,n1,m0,female,2009,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-78-7143-01,62,1,4961,stage ib,t2,n0,m0,female,1992,lung bronchioloalveolar carcinoma nonmucinous
+TCGA-55-7816-01,49,1,468,stage iv,t4,n1,m1,female,2011,lung adenocarcinoma- not otherwise specified (nos)
+TCGA-05-4425-01,70,0,669,stage iv,t2,n0,m1,female,2008,lung adenocarcinoma mixed subtype
