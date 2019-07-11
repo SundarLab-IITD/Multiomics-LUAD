@@ -1,0 +1,44 @@
+%% I/O
+X = input;
+Y = output;
+classOrder = unique(Y);
+rng (1); % For reproducibility
+classOrder()
+
+%% Train a classifier
+% This code specifies all the classifier options and trains the classifier.
+t = templateTree('MaxNumSplits', 20);
+enMdl = fitcensemble(X,Y,'OptimizeHyperparameters','all','Learners',t, ...
+    'HyperparameterOptimizationOptions',struct('AcquisitionFunctionName','expected-improvement-plus'))
+
+%% crossval
+crossv = crossval(PMdl, 'KFold', 10)
+[validationPredictions, validationScores] = kfoldPredict(crossv);
+%% Create the result struct with predict function
+predictorExtractionFcn = @(t) t(:, predictorNames);
+ensemblePredictFcn = @(x) predict(classificationEnsemble, x);
+trainedClassifier.predictFcn = @(x) ensemblePredictFcn(predictorExtractionFcn(x));
+
+% Add additional fields to the result struct
+trainedClassifier.RequiredVariables = {'VarName1', 'VarName2', 'VarName3', 'VarName4', 'VarName5', 'VarName6', 'VarName7', 'VarName8', 'VarName9', 'VarName10', 'VarName11', 'VarName12', 'VarName13', 'VarName14', 'VarName15', 'VarName16', 'VarName17', 'VarName18', 'VarName19', 'VarName20', 'VarName21', 'VarName22', 'VarName23', 'VarName24', 'VarName25', 'VarName26', 'VarName27', 'VarName28', 'VarName29', 'VarName30', 'VarName31', 'VarName32', 'VarName33', 'VarName34', 'VarName35', 'VarName36', 'VarName37', 'VarName38', 'VarName39', 'VarName40', 'VarName41', 'VarName42', 'VarName43', 'VarName44', 'VarName45', 'VarName46', 'VarName47', 'VarName48', 'VarName49', 'VarName50', 'Female', 'VarName52', 'VarName53', 'DT', 'VarName55', 'VarName56', 'VarName57', 'VarName58', 'VarName59', 'VarName60', 'VarName61', 'VarName62'};
+trainedClassifier.ClassificationEnsemble = classificationEnsemble;
+trainedClassifier.About = 'This struct is a trained model exported from Classification Learner R2018b.';
+trainedClassifier.HowToPredict = sprintf('To make predictions on a new table, T, use: \n  yfit = c.predictFcn(T) \nreplacing ''c'' with the name of the variable that is this struct, e.g. ''trainedModel''. \n \nThe table, T, must contain the variables returned by: \n  c.RequiredVariables \nVariable formats (e.g. matrix/vector, datatype) must match the original training data. \nAdditional variables are ignored. \n \nFor more information, see <a href="matlab:helpview(fullfile(docroot, ''stats'', ''stats.map''), ''appclassification_exportmodeltoworkspace'')">How to predict using an exported model</a>.');
+
+% Extract predictors and response
+% This code processes the data into the right shape for training the
+% model.
+inputTable = trainingData;
+predictorNames = {'VarName1', 'VarName2', 'VarName3', 'VarName4', 'VarName5', 'VarName6', 'VarName7', 'VarName8', 'VarName9', 'VarName10', 'VarName11', 'VarName12', 'VarName13', 'VarName14', 'VarName15', 'VarName16', 'VarName17', 'VarName18', 'VarName19', 'VarName20', 'VarName21', 'VarName22', 'VarName23', 'VarName24', 'VarName25', 'VarName26', 'VarName27', 'VarName28', 'VarName29', 'VarName30', 'VarName31', 'VarName32', 'VarName33', 'VarName34', 'VarName35', 'VarName36', 'VarName37', 'VarName38', 'VarName39', 'VarName40', 'VarName41', 'VarName42', 'VarName43', 'VarName44', 'VarName45', 'VarName46', 'VarName47', 'VarName48', 'VarName49', 'VarName50', 'Female', 'VarName52', 'VarName53', 'DT', 'VarName55', 'VarName56', 'VarName57', 'VarName58', 'VarName59', 'VarName60', 'VarName61', 'VarName62'};
+predictors = inputTable(:, predictorNames);
+response = inputTable.VarName63;
+isCategoricalPredictor = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false];
+
+% Perform cross-validation
+partitionedModel = crossval(trainedClassifier.ClassificationEnsemble, 'KFold', 5);
+
+% Compute validation predictions
+[validationPredictions, validationScores] = kfoldPredict(partitionedModel);
+
+% Compute validation accuracy
+validationAccuracy = 1 - kfoldLoss(partitionedModel, 'LossFun', 'ClassifError');
