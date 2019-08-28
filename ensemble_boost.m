@@ -23,5 +23,5 @@ validationAccuracy()
 %Y = cellstr(Y)
 predictedY = resubPredict(enMdl);
 
-plotconfusion(validationPredictions, predictedY)
-plotroc(validationPredictions, predictedY)
+plotconfusion(validationPredictions, Y)
+plotroc(validationPredictions, Y)
